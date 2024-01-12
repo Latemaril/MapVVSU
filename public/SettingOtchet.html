@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Настройка отчета</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+
+    <link rel="stylesheet" href="/stylesheets/SettingOtchet.css"> <!-- Подключение вашего CSS-файла -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+<p class="Text_Otchet">Настройки отчета</p>
+<p class="Open_Date">Выберите свободную дату</p>
+
+<input type="text" id="datePicker" placeholder="дд.мм.гг - дд.мм.гг">
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+<script src="/javascripts/data.js"></script>
+<p class="Open_Date">Выберите время начала</p>
+<input type="text" class="time-input" id="timeInput" placeholder="Выбрать время" readonly>
+<div class="time-dropdown" id="timeDropdown"></div>
+
+<p class="Open_Date">Выберите время окончания</p>
+<input type="text" class="time-input" id="endtimeInput" placeholder="Выбрать время" readonly>
+<div class="time-dropdown" id="endtimeDropdown"></div>
+<p class="Open_Date">Email (для отправки отчета)</p>
+<input type="text" class="email" id="email" placeholder="Введите email">
+<div class="button-container">
+    <div class="my-button">
+        <span class="my-button__text imageOtchet">Получить отчет</span>
+    </div>
+    <a href="../Politika.html" class="my-link">политика конфиденциальности</a>
+</div>
+
+
+
+
+</body>
+</html>

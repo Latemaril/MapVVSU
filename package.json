@@ -1,0 +1,22 @@
+{
+  "name": "untitled7",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "@turf/turf": "^6.5.0",
+    "body-parser": "^1.20.2",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "exceljs": "^4.4.0",
+    "express": "^4.18.2",
+    "fast-csv": "^4.3.6",
+    "morgan": "~1.9.1",
+    "mysql": "^2.18.1",
+    "mysql2": "^3.6.2",
+    "nodemailer": "^6.9.7",
+    "pg": "^8.11.3"
+  }
+}

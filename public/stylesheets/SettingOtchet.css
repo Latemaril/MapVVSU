@@ -1,0 +1,216 @@
+body {
+    background-color: #1B1B1B;
+
+}
+.Text_Otchet {
+    font-family: 'Roboto', sans-serif;  /* Шрифт Roboto */
+    color: white;
+    font-size: 4vw;  /* Размер шрифта */
+    padding-top: 20px;  /* Отступ сверху */
+    text-align: center;
+
+}
+.Open_Date{
+    margin-top: 20px;
+    font-family: 'Roboto', sans-serif;  /* Шрифт Roboto */
+    margin-left: 10%;
+    color: white;
+    font-size: 1.5vw;  /* Размер шрифта */
+}
+#datePicker {
+    width: 27%;
+    margin-left: 10%;
+    font-family: 'Roboto', sans-serif;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+}
+
+#datePicker:focus {
+    outline: none;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+@media only screen and (max-width: 438px) {
+    .flatpickr-calendar.open {
+        margin-left: -8%;
+    }
+}
+
+    .flatpickr-calendar.open {
+        min-width: 20%;
+        max-width: 80%;
+    }
+span.flatpickr-weekday {
+color: white;
+}
+/* Кастомизация стилей календаря */
+.flatpickr-calendar.inline, .flatpickr-calendar.open {
+    background-color: #2B2930;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.flatpickr-day {
+    color: white;
+}
+
+.flatpickr-day:hover, .flatpickr-day:focus {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.flatpickr-day.today {
+    border-color: #4F5C4F;
+    color: white;
+}
+
+.flatpickr-day.selected, .flatpickr-day.selected:hover, .flatpickr-day.selected.nextMonthDay, .flatpickr-day.selected.prevMonthDay {
+    background-color: #4F5C4F;
+    color: white;
+    border-radius: 50%;
+}
+
+/* Для заголовков месяца и года */
+.flatpickr-current-month .flatpickr-monthDropdown-months,
+.flatpickr-current-month .numInputWrapper,
+.flatpickr-current-month .flatpickr-monthDropdown-months .cur-month,
+.flatpickr-current-month span.cur-year {
+    color: white;
+}
+.flatpickr-day.inRange {
+    background-color: #4F5C4F;
+    color: white;
+    border-radius: 0;  /* убираем border-radius */
+    box-shadow: none !important; /* явное отключение box-shadow */
+
+}
+
+.flatpickr-day.inRange.startRange, .flatpickr-day.inRange.endRange {
+    border-radius: 50%;  /* добавляем border-radius только для первого и последнего дня в диапазоне */
+}
+
+.flatpickr-next-month{
+    color: white;
+}
+
+.flatpickr-calendar rangeMode animate open arrowTop arrowLeft{
+    width: 20%;
+}
+.email{
+    font-family: 'Roboto', sans-serif;
+    margin-left: 10%;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+    width: 27%;
+}
+
+
+#endtimeInput{
+    font-family: 'Roboto', sans-serif;
+    margin-left: 10%;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+    width: 27%;
+}
+#timeInput {
+    font-family: 'Roboto', sans-serif;
+    margin-left: 10%;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+    width: 27%;
+}
+
+
+.time-dropdown {
+    display: none;
+    margin-left: 10%;
+    border: 1px solid #ccc;
+    background: #2B2930;
+    color: white;
+    font-family: Roboto;
+    font-size: 1.5vw;
+
+    border-radius: 5px;
+    position: absolute;
+    max-height: 150px;
+    overflow-y: auto;
+    width: 28.6%;
+}
+
+.time-dropdown div {
+    padding: 5px 10px;
+    padding-left: 4%;
+    cursor: pointer;
+}
+
+.time-dropdown div:hover {
+    background-color: #eee;
+}
+.flatpickr-calendar rangeMode animate arrowTop arrowLeft open{
+    width: auto;
+}
+
+.flatpickr-monthDropdown-months {
+    background-color: #2B2930 !important;
+}
+.flatpickr-innerContainer{
+    justify-content:space-around;!important;
+}
+.error-border {
+    border: 2px solid red;
+}
+
+.success-border {
+    border: 2px solid green;
+}
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    padding-left: 10%;
+}
+
+.my-button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    width: 20vw;
+    max-width: 20%;
+    padding: 10px 15px;
+    background-color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.my-button__text {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5vw;
+    color: #333;
+}
+
+.my-link {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5vw;
+    color: blue;
+    text-decoration: none;
+    margin-top: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+
+}
+
+.my-link:hover {
+    color: red;
+}
